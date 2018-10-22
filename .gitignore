@@ -1,0 +1,36 @@
+target
+.idea
+*.iml
+nbactions.xml
+nb-configuration.xml
+.project
+.classpath
+
+#python
+*.pyc
+.python-version
+
+#robot framework specifics
+log.html
+output.xml
+report.html
+*.png
+
+# eclipse specific git ignore
+.metadata
+.settings/
+.loadpath
+/libspecs/
+.pydevproject
+
+red.xml
+.project
+.pydevproject
+
+*.exe
+*.log
+*.sql
+
+# macOS specific git ignore
+.DS_Store
+
