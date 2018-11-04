@@ -1,9 +1,11 @@
 *** Settings ***
-Library    SeleniumLibrary    
+Library    SeleniumLibrary
+Variables    ../../Objects/Mahara/Mahara_Page_Objects.py    
 
 *** Keywords ***
 Open Browser To Mahara  
     Open Browser    https://demo.mahara.org/    chrome
+    Maximize Browser Window
       
 Login To Mahara
     [Arguments]    ${uname}    ${pwd}
@@ -14,3 +16,9 @@ Login To Mahara
 Capture Screenshot And Close Browser
     Capture Page Screenshot    
     Close Browser
+    
+Verify User Logged In
+    [Arguments]    ${name}
+    Wait Until Page Contains Element    ${frame_profile}
+    Page Should Contain Element   ${profile_block} 
+    Page Should Contain    ${name}

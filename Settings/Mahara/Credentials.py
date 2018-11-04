@@ -1,0 +1,8 @@
+invalid_user = "invalidname"
+invalid_password = "invalid password"
+admin_user = "admin"
+admin_password = "MaharaDemo"   
+student_user = "student"
+student_password = "MaharaDemo"
+admin_name = "James Jetts"
+student_name = "Paula Palsen"
