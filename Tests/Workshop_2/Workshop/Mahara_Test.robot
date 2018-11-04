@@ -14,4 +14,4 @@ Mahara Invalid Login
 Mahara Admin Login
     Login To Mahara    Admin    MaharaDemo
     Wait Until Page Contains Element    https://demo.mahara.org/user/james-jetts
-    Page Should Contain Element    xpath=//a[@class="user-icon"]   
+    Page Should Contain Element    xpath=//a[@class="user-icon"]  
