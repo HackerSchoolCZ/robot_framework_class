@@ -33,3 +33,7 @@ addr_tbox_info = "id=other"
 addr_tbox_phone = "id=phone"
 addr_tbox_cellphone = "id=phone_mobile"
 addr_tbox_alias = "id=alias"
+## Validation  Messages
+invalid_messages = {'postcode':"The Zip/Postal code you've entered is invalid. It must follow this format: 00000",
+                    'password':"passwd is invalid.",
+                    'phone':'phone is invalid.'}
