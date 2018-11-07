@@ -16,7 +16,7 @@ sup_pwd_password = "id=passwd"
 sup_dropdown_day = "id=days"
 sup_dropdown_month = "id=months"
 sup_dropdown_year = "id=years"
-sup_chck_newslettter = "id=newsletter"
+sup_chck_newsletter = "id=newsletter"
 sup_chck_offers = "id=optin"
 sup_btn_register = "id=submitAccount"
 ## Adress
