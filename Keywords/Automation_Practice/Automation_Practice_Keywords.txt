@@ -1,0 +1,32 @@
+*** Settings ***
+Library    SeleniumLibrary
+Variables	../../Objects/Automation_practice/Automation_Practice.py
+
+*** Variables ***
+${url}	http://automationpractice.com/index.php?controller=authentication&back=my-account#account-creation
+${browser}	chrome
+
+*** Keywords ***
+Open Eshop Registration Form
+    [Arguments]    ${email}
+    Open Browser    ${url}    ${browser}
+    Maximize Browser Window
+    Input Text    ${auth_tbox_email}    ${email}
+    Click Button    ${btn_create_account}
+    Wait Until Page Contains Element    ${sup_btn_register}
+    
+Fill In Registration Form
+    [Arguments]    &{test_data}
+    Input Text    ${sup_tbox_first_name}    ${test_data['firstname']}
+    Input Text    ${sup_tbox_last_name}    ${test_data['lastname']}
+    Input Text    ${sup_pwd_password}    ${test_data['password']}
+    Input Text    ${addr_tbox_address1}    ${test_data['address']}
+    Input Text    ${addr_tbox_city}    ${test_data['city']}
+    Select From List By Label    ${addr_dropdown_country}    ${test_data['country']}
+    Input Text    ${addr_tbox_zip}    ${test_data['postcode']}
+    Input Text    ${addr_tbox_phone}   ${test_data['phone']}
+    Input Text    ${addr_tbox_cellphone}   ${test_data['phone_mobile']}
+    
+Capture Screenshot And Close Browser
+    Capture Page Screenshot    
+    Close Browser
